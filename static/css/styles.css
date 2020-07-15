@@ -1,0 +1,11 @@
+.row {
+    display: flex;
+  }
+
+.p {
+    color: blue;
+}
+  
+  .column {
+    flex: 50%;
+  }

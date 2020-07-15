@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CPADRS</title>
+        <link href='/static/css/styles.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <p>To save this layout <a href="/sshot">click here</a></p>
+        </header>
+        <div class="row">
+            <div class="column">
+                {% for p in flist %}
+                    <center>
+                    <p>{{p['Name']}}</p>
+                    <p>{{p['Family Name']}}</p>
+                    <p>{{p['Contact']}}</p>
+                    <p>{{p['Age']}}</p>
+                    </center>
+                    <br/>
+                {% endfor %}
+            </div>
+            <div class="column">
+                {% for p in mlist %}
+                <center>
+                    <p>{{p['Name']}}</p>
+                    <p>{{p['Family Name']}}</p>
+                    <p>{{p['Contact']}}</p>
+                    <p>{{p['Age']}}</p>
+                </center>
+                <br/>
+                {% endfor %}
+            </div>
+          </div> 
+    </body>
+</html>
