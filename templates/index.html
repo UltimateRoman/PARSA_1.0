@@ -2,20 +2,26 @@
 <html>
     <head>
         <title>CPADRS</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href='/static/css/styles.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <header>
-            <p>To save this layout <a href="/sshot">click here</a></p>
+            <center>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='/sshot'">Save Layout Image</button>    
+            </center>
         </header>
         <div class="row">
             <div class="column">
                 {% for p in flist %}
                     <center>
-                    <p>{{p['Name']}}</p>
-                    <p>{{p['Family Name']}}</p>
-                    <p>{{p['Contact']}}</p>
-                    <p>{{p['Age']}}</p>
+                        <div class="card" style="width: 18rem;">
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">{{p['Name']}}</li>
+                              <li class="list-group-item">{{p['Family Name']}}</li>
+                              <li class="list-group-item">{{p['Contact']}}</li>
+                            </ul>
+                          </div>
                     </center>
                     <br/>
                 {% endfor %}
@@ -23,10 +29,13 @@
             <div class="column">
                 {% for p in mlist %}
                 <center>
-                    <p>{{p['Name']}}</p>
-                    <p>{{p['Family Name']}}</p>
-                    <p>{{p['Contact']}}</p>
-                    <p>{{p['Age']}}</p>
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">{{p['Name']}}</li>
+                          <li class="list-group-item">{{p['Family Name']}}</li>
+                          <li class="list-group-item">{{p['Contact']}}</li>
+                        </ul>
+                    </div>
                 </center>
                 <br/>
                 {% endfor %}
