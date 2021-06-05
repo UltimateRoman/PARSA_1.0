@@ -1,2 +1,3 @@
 # PARSA_1.0
-Coming soon.....
+
+An Attendee management system, especially suited for in-person events/programmes held during a pandemic.
